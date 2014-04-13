@@ -1,9 +1,11 @@
 ;;-----------------------------------------------------------------------------
-;; Web モードの設定
+;; スムーススクロールの設定
 ;;-----------------------------------------------------------------------------
 
-(require-package 'web-mode)
+(require-package 'smooth-scroll)
 
-(add-to-list 'auto-mode-alist '("\\.cshtml\\'" . web-mode))
+(require 'smooth-scroll)
 
-(provide 'init-web-mode)
+(smooth-scroll-mode t)
+
+(provide 'init-smooth-scroll)

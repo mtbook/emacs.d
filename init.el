@@ -11,5 +11,7 @@
 (require 'init-linum-mode)
 
 (require 'init-csharp-mode)
-;(require 'init-powerline)
+(require 'init-powerline)
 (require 'init-web-mode)
+(require 'init-smooth-scroll)
+(require 'init-sr-speedbar)

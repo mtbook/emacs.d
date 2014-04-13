@@ -8,14 +8,14 @@
 
 (setq initial-frame-alist
       (append (list
+	       '(cursor-type . bar)
 	       '(vertical-scroll-bars . nil)
-	       '(width . 128)
-	       '(height . 32)
-	       '(top . 128)
-	       '(left . 128)
-;	       '(alpha . (95 80))
-	       )
-	      initial-frame-alist))
+	       '(width  . 128)
+	       '(height .  32)
+	       '(top    . 128)
+	       '(left   . 128))
+	      initial-frame-alist)
+      )
 (setq default-frame-alist initial-frame-alist)
 
 (provide 'init-frame)

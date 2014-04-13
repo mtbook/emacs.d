@@ -2,15 +2,20 @@
 ;; フォントの設定
 ;;-----------------------------------------------------------------------------
 
-(create-fontset-from-ascii-font "Dejavu Sans Mono-13.5:weight=normal:slant=normal" nil "myfavoritefontset")
-(set-fontset-font "fontset-myfavoritefontset"
-		  'japanese-jisx0208
-		  (font-spec :family "Hiragino Maru Gothic ProN" :size 13.5)
-		  nil
-		  'append)
-(add-to-list 'default-frame-alist '(font . "fontset-myfavoritefontset"))
-  
+(set-face-attribute 'default nil
+                    :family "Ricty Discord"
+                    :height 160)
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0208
+                  (cons "Ricty Discord" "iso10646-1"))
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0212
+                  (cons "Ricty Discord" "iso10646-1"))
+(set-fontset-font (frame-parameter nil 'font)
+                  'katakana-jisx0201
+                  (cons "Ricty Discord" "iso10646-1"))
+
 ;; 行間の設定
-(setq-default line-spacing 0.2)
+(setq-default line-spacing 0.1)
 
 (provide 'init-font)

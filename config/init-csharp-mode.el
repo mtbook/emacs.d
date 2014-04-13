@@ -2,6 +2,8 @@
 ;; C# モードの設定
 ;;-----------------------------------------------------------------------------
 
+(require-package 'csharp-mode)
+
 (autoload 'csharp-mode "csharp-mode" "Major mode for editing C# code." t)
 
 (setq auto-mode-alist
