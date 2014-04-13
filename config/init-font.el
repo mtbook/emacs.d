@@ -15,6 +15,12 @@
                   'katakana-jisx0201
                   (cons "Ricty Discord" "iso10646-1"))
 
+;; 太字を無効にする
+(mapc
+  (lambda (face)
+    (set-face-attribute face nil :weight 'normal :underline nil))
+  (face-list))
+
 ;; 行間の設定
 (setq-default line-spacing 0.1)
 

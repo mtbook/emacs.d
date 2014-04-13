@@ -12,11 +12,15 @@
   (linum-mode 0)
 )
 
+;; 現在行のハイライト
 (require-package 'hlinum)
 (hlinum-activate)
 (custom-set-faces
 	'(linum-highlight-face ((t (:foreground "gray70"
 				    :background "gray30"
 				    :height 0.90)))))
+
+;; 対応する括弧のハイライト
+(show-paren-mode t)
 
 (provide 'init-linum-mode)
