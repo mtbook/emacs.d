@@ -1,8 +1,13 @@
+# Autocomplete
+ac-comphist.dat
+
 # Auto save
 auto-save-list
+
+# Compiled
+*.elc
 
 # ELPA
 elpa
 
-# Compiled
-*.elc
+eshell

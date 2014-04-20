@@ -18,4 +18,6 @@
       )
 (setq default-frame-alist initial-frame-alist)
 
+(column-number-mode t)
+
 (provide 'init-frame)

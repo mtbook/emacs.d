@@ -10,7 +10,9 @@
 (require 'init-font)
 (require 'init-linum-mode)
 
+(require 'init-auto-complete)
 (require 'init-csharp-mode)
+(require 'init-csv-mode)
 (require 'init-powerline)
 (require 'init-web-mode)
 (require 'init-smooth-scroll)
